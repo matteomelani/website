@@ -16,7 +16,7 @@ export default ({ children }) => (
     <div id='navBox' className={styles.navBox}>
       <ul>
         <ListLink to="/">Main</ListLink>
-        <ListLink to="/about/">About</ListLink>
+        {/* <ListLink to="/about/">About</ListLink> */}
       </ul>
     </div>
   </div>
