@@ -1,3 +1,5 @@
 import React from "react"
+import headerStyles from "./header.module.css"
+console.log(headerStyles)
 
-export default props => <h1>{props.headerText}</h1>
+export default props => <h3>{props.headerText}</h3>
