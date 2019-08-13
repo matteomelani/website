@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 // Colors
 // (https://dribbble.com/shots/6744282-The-Lamp-Shades)
 $white:          #ffffff;
@@ -10,16 +12,16 @@ $accent-brown:   #5a3623;
 $accent-beige:   #b79267;
 $accent-orange:  #b26434;
 
-// Fonts
-$font: futura;
 
-html {
-  background-color: $white;
-  font-family: Arial, Helvetica, sans-serif;
-  color: $accent-orange;
+$text: $base-black;
+@import "~bulma/bulma.sass";
+
+#topBar {
+    border: 1px solid blue;
+    margin: 10px auto;
+    max-width: 1000px;
 }
 
-p {
-  font-size: 12px;
+#mainArea {
+    border: 1px solid green;
 }
-

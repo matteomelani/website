@@ -1,15 +1,19 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import PostItem from "../components/postItem"
 
+
 export default ({ data }) => (
-    <Layout> 
-        <h3>{data.site.siteMetadata.title}</h3>
+    <Layout breadcrumbsItems={[{text:'Matteo Melani', link: '/'}]}> 
+        <p>
+          Hello this is my Matteo Melani. I usually write something every day.
+          To contact me go to my <Link to="/about">about page</Link>
+        </p>
         {
           data.allMarkdownRemark.edges.map(
             ( {node} )=> (
-              <PostItem key={node.frontmatter.title} title={node.frontmatter.title} />
+              <PostItem key={node.frontmatter.title} title={node.frontmatter.title} slug={node.fields.slug} />
             )
           )
         }
@@ -27,6 +31,9 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
+          fields{
+            slug
+          }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title

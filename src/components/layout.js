@@ -1,23 +1,19 @@
 import React from "react"
-import { Link } from "gatsby"
+import Breadcrumbs from "./breadcrumbs"
 import styles from "./layout.module.css"
 
-const ListLink = props => (
-  <li style={{ display: `inline-block`, marginRight: `1rem` }}>
-    <Link to={props.to}>{props.children}</Link>
-  </li>
-)
 
-export default ({ children }) => (
-  <div id='topBox' className={styles.topBox}>
-    <div id='mainBox' className={styles.mainBox}>
-      {children}
+export default (props) => (
+  <div className='container'> 
+    <div id='topBar' styles={styles.topBar}>
+      <Breadcrumbs items={props.breadcrumbsItems}></Breadcrumbs>
     </div>
-    <div id='navBox' className={styles.navBox}>
-      <ul>
-        <ListLink to="/">Main</ListLink>
-        {/* <ListLink to="/about/">About</ListLink> */}
-      </ul>
+    <div id='mainArea'> 
+      <div className='columns'>
+        <div id='mainBox' className='column is-four-fifths'>
+          {props.children}
+        </div>
+      </div>
     </div>
   </div>
 )

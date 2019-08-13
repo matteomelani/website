@@ -1,18 +1,10 @@
-.topBox {
+#topBar {
     border: 1px solid blue;
     margin: 3rem auto;
-    max-width: 850px;
+    max-width: 400px;
     padding: 0 1rem;
 }
 
-.mainBox {
+#mainArea {
     border: 1px solid green;
-    max-width: 650px;
-    float: left;
-}
-
-.navBox {
-    border: 1px solid red;
-    float: right;
-    max-width: 200px;
 }
