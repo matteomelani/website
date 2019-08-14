@@ -5,12 +5,12 @@ import styles from "./layout.module.css"
 
 export default (props) => (
   <div className='container'> 
-    <div id='topBar' styles={styles.topBar}>
+    <div id='top-bar' styles={styles.topBar}>
       <Breadcrumbs items={props.breadcrumbsItems}></Breadcrumbs>
     </div>
-    <div id='mainArea'> 
+    <div id='main-area'> 
       <div className='columns'>
-        <div id='mainBox' className='column is-four-fifths'>
+        <div id='main-box' className='column is-four-fifths'>
           {props.children}
         </div>
       </div>

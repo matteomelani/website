@@ -20,7 +20,7 @@ $link: $accent-orange;
 @import "~bulma/bulma.sass";
 
 
-#topBar {
+#top-bar {
     background: $base-white; 
     padding: 10px 50px;
     .breadcrumb {
@@ -29,10 +29,14 @@ $link: $accent-orange;
     
 }
 
-#mainArea {
-    padding: 10px 50px;
+#main-area {
+    padding: 50px 50px;
 }
 
 #pinned-message {
+    margin: 0px 0px 50px 0px;
+}
+
+#contact-info {
     margin: 25px 0px 50px 0px;
 }
