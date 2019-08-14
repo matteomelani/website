@@ -6,7 +6,7 @@ export default ( {data} ) => {
     const post = data.markdownRemark
     return (
         <Layout breadcrumbsItems={[{text:'Matteo Melani', link: '/'},{text: post.frontmatter.title , link: post.slug}]}>
-            <div>{ post.frontmatter.title }</div>
+            <div className="post-title is-size-4">{ post.frontmatter.title }</div>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </Layout>
     )

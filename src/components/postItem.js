@@ -1,9 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
-import styles from "./postItem.module.css"
 
 const PostItem = props => (
-    <div className={styles.postItem}>
+    <div className="post-item is-size-6">
         <Link to={props.slug}>{props.title}</Link>
     </div>
   )

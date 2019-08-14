@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from "gatsby"
-import "../style/mystyles.scss"
 
 const Breadcrumbs = ({ items = [], className = '' }) => (
   <section className={`breadcrumb ${className}`}>

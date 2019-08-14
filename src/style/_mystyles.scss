@@ -15,28 +15,6 @@ $accent-orange:  #b26434;
 
 $text: $base-black;
 $link: $accent-orange;
-// $link-visited: $accent-orange;
+$body-font-size: 12px;
 
 @import "~bulma/bulma.sass";
-
-
-#top-bar {
-    background: $base-white; 
-    padding: 10px 50px;
-    .breadcrumb {
-        font-size: 0.7em;
-    }
-    
-}
-
-#main-area {
-    padding: 50px 50px;
-}
-
-#pinned-message {
-    margin: 0px 0px 50px 0px;
-}
-
-#contact-info {
-    margin: 25px 0px 50px 0px;
-}

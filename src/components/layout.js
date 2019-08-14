@@ -1,11 +1,9 @@
 import React from "react"
 import Breadcrumbs from "./breadcrumbs"
-import styles from "./layout.module.css"
-
 
 export default (props) => (
   <div className='container'> 
-    <div id='top-bar' styles={styles.topBar}>
+    <div id='top-bar'>
       <Breadcrumbs items={props.breadcrumbsItems}></Breadcrumbs>
     </div>
     <div id='main-area'> 
