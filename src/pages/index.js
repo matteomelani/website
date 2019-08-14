@@ -6,8 +6,9 @@ import PostItem from "../components/postItem"
 
 export default ({ data }) => (
     <Layout breadcrumbsItems={[{text:'Matteo Melani', link: '/'}]}> 
-        <p>
+        <p id='pinned-message'>
           Hello this is my Matteo Melani. I usually write something every day.
+          <br></br>
           To contact me go to my <Link to="/about">about page</Link>
         </p>
         {

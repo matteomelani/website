@@ -14,14 +14,25 @@ $accent-orange:  #b26434;
 
 
 $text: $base-black;
+$link: $accent-orange;
+// $link-visited: $accent-orange;
+
 @import "~bulma/bulma.sass";
 
+
 #topBar {
-    border: 1px solid blue;
-    margin: 10px auto;
-    max-width: 1000px;
+    background: $base-white; 
+    padding: 10px 50px;
+    .breadcrumb {
+        font-size: 0.7em;
+    }
+    
 }
 
 #mainArea {
-    border: 1px solid green;
+    padding: 10px 50px;
+}
+
+#pinned-message {
+    margin: 25px 0px 50px 0px;
 }

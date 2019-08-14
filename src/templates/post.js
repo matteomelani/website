@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 export default ( {data} ) => {
     const post = data.markdownRemark
     return (
-        <Layout breadcrumbsItems={[{text:'mame', link: '/'},{text: post.frontmatter.title , link: post.slug}]}>
+        <Layout breadcrumbsItems={[{text:'Matteo Melani', link: '/'},{text: post.frontmatter.title , link: post.slug}]}>
             <div>{ post.frontmatter.title }</div>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
         </Layout>
