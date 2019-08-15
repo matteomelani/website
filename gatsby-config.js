@@ -7,9 +7,16 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `Mame`,
+    title: "Matteo Melani",
+    titleTemplate: "%s · Mame",
+    description:
+      "Matteo's home on the Internet.",
+    url: "https://www.mame.io",
+    image: "/images/matteo.jpg",
+    twitterUsername: "@matteomelani",
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-transformer-remark`,

@@ -1,11 +1,17 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import PostItem from "../components/postItem"
 
 
 export default ({ data }) => (
-    <Layout breadcrumbsItems={[{text:'Matteo Melani', link: '/'}]}> 
+    <Layout breadcrumbsItems={[{text:'Matteo Melani', link: '/'}]}>
+      <SEO 
+        title = "All Posts" 
+        description= "Matteo's blog." 
+        zType = 'website'
+      />
         <p id='pinned-message'>
           Hello this is my Matteo Melani. I usually write something every day.
           <br></br>
