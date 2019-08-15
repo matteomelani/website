@@ -19,8 +19,13 @@ export default ({ data }) => (
         </p>
         {
           data.allMarkdownRemark.edges.map(
-            ( {node} )=> (
-              <PostItem key={node.frontmatter.title} title={node.frontmatter.title} slug={node.fields.slug} />
+            ({ node })=> (
+              <PostItem 
+                key = {node.frontmatter.title} 
+                title = {node.frontmatter.title} 
+                slug = {node.fields.slug} 
+                date = {node.frontmatter.date}
+              />
             )
           )
         }
@@ -44,6 +49,7 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            description
           }
         }
       }
