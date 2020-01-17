@@ -6,7 +6,10 @@ import SEO from "../components/seo"
 export default ( props ) => {
     const post = props.data.markdownRemark
     return (
-        <Layout breadcrumbsItems={[{text:'Matteo Melani', link: '/'},{text: post.frontmatter.title , link: post.slug}]}>
+        <Layout breadcrumbsItems={[
+          { text:'Matteo Melani', link: '/' },
+          { text: 'Posts', link: 'posts'},
+          { text: post.frontmatter.title , link: post.slug }]}>
           <SEO 
             title = { post.frontmatter.title } 
             description= { post.frontmatter.description || post.excerpt }

@@ -12,18 +12,34 @@ $accent-brown:   #5a3623;
 $accent-beige:   #b79267;
 $accent-orange:  #b26434;
 
+// Colors Schema: SF-maritime
+$mm-dark-green: #084530;
+$mm-black: #0d100d;
+$mm-white: #ddd7c7;
+$mm-sea-green: #606e5a;
+$mm-orange: #ba2905;
+$mm-dark-blue: #163953;
+$mm-light-blue: #516c7b;
+$mm-yellow: #EFB778;
 
-$text: $base-black;
-$link: $accent-orange;
-// $link: #00DBB4;
-// $link: #00B9CC;
-// $link: #01BA36;
-// $link: #0E5C22;
-// $link: #669275;
-// $body-font-size: 16px;
+$mm-other-green: #02c159;
+$mm-other-yellow: #e0af0f;
+$mm-other-yellow2: #e8c159;
+
+$primary: $mm-dark-green;
+$text: $mm-black;
+// $link: $mm-light-blue;
+$body-font-size: 16px;
 
 
 @import "~bulma/bulma.sass";
+
+.breadcrumb li.is-active a {
+    color: $mm-yellow;
+}
+.breadcrumb li a {
+    color: $mm-light-blue;
+}
 
 // h1 {
 //     font-size: 32px;

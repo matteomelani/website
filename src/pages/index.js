@@ -9,50 +9,15 @@ export default ({ data }) => (
     <Layout breadcrumbsItems={[{text:'Matteo Melani', link: '/'}]}>
       <SEO 
         title = "All Posts" 
-        description= "Matteo's blog." 
+        description= "Matteo Melani's posts" 
         zType = 'website'
       />
-        <p id='pinned-message'>
-          Hello this is my Matteo Melani. I usually write something every day.
-          <br></br>
-          To contact me go to my <Link to="/about">about page</Link>
-        </p>
-        {
-          data.allMarkdownRemark.edges.map(
-            ({ node })=> (
-              <PostItem 
-                key = {node.frontmatter.title} 
-                title = {node.frontmatter.title} 
-                slug = {node.fields.slug} 
-                date = {node.frontmatter.date}
-              />
-            )
-          )
-        }
+        <ul>
+          <li><Link to='posts'>Posts</Link></li>
+          <li><Link to='books'>Books</Link></li>
+          <li><Link to='places'>Places</Link></li>
+          <li><Link to='design'>Design</Link></li>
+          <li><Link to='about'>About</Link></li>
+        </ul>
     </Layout>
 )
-
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    },
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          fields{
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMM DD")
-            title
-            description
-          }
-        }
-      }
-    }
-  }
-`
