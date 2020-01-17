@@ -39,3 +39,12 @@ exports.createPages = ({ graphql, actions}) => {
     })
   })
 }
+exports.sourceNodes = function sourceNodes({ actions }) {
+  const { createTypes } = actions
+
+  createTypes(`
+    type MyType @infer {
+      date: Date @dateformat(formatString: "DD MMM", locale: "fi")
+    }
+  `)
+}

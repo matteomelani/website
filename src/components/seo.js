@@ -27,6 +27,7 @@ const SEO = ({ title, description, image, pathname, zType }) => (
                     url: `${siteUrl}${pathname || '/'}`,
                     zType: zType || "website",
                 }
+                
                 return (
                   <div>
                     <Helmet title={seo.title} titleTemplate={titleTemplate}>
