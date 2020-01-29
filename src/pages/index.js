@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import PostItem from "../components/postItem"
+import PostItem from "../components/PostItem"
 
 
 export default ({ data }) => (
@@ -13,13 +13,12 @@ export default ({ data }) => (
         zType = 'website'
       />
       <section class='section'>
-        <div class='container'>
-          <ul>
-            <li><Link to='posts'>Posts</Link></li>
-            <li><Link to='startup'>Startup</Link></li>
-            <li><Link to='about'>About</Link></li>
-          </ul>
-        </div>
+        <ul>
+          <li><Link to='posts'>Posts</Link></li>
+          <li><Link to='startup'>Startup</Link></li>
+          <li><Link to='books'>Books</Link></li>
+          <li><Link to='about'>About</Link></li>
+        </ul>
       </section>
     </Layout>
 ) 

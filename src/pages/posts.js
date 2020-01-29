@@ -1,8 +1,8 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import PostItem from "../components/postItem"
+import PostItem from "../components/PostItem"
 
 
 export default ({ data }) => (
@@ -12,18 +12,17 @@ export default ({ data }) => (
         description= "Matteo Melani's posts"
         zType = 'website'
       />
-        {
-          data.allMarkdownRemark.edges.map(
-            ({ node })=> (
-              <PostItem 
-                key = {node.frontmatter.title} 
-                title = {node.frontmatter.title} 
-                slug = {node.fields.slug} 
-                date = {node.frontmatter.date}
-              />
-            )
-          )
-        }
+        <section class='section'>
+            {/* <div class='subtitle'>Technical</div> */}
+            {data.allMarkdownRemark.edges.map(({ node })=> (
+                <PostItem 
+                    key = {node.frontmatter.title} 
+                    title = {node.frontmatter.title} 
+                    slug = {node.fields.slug} 
+                    date = {node.frontmatter.date}
+                />
+            ))}
+        </section>
     </Layout>
 )
 
@@ -35,7 +34,10 @@ export const pageQuery = graphql`
         title
       }
     },
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+        filter: {fields: { collection: {eq: "blog"}} },
+        sort: { fields: [frontmatter___date], order: DESC }) 
+    {
       edges {
         node {
           fields{
