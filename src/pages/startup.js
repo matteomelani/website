@@ -3,8 +3,8 @@ import Layout from "../components/layout";
 import SEO from "../components/seo"
 
 export default () => (
-    <Layout breadcrumbsItems={[{ text:'Matteo Melani', link: '/' },{ text:'startup', link: '/startup' }]}>
-      <SEO title = 'Startup' description = 'Resource about building a startup.' pathname = '/startups' zType = 'profile' />
+    <Layout breadcrumbsItems={[{ text:'Matteo Melani', link: '/' },{ text:'Startup', link: '/startup' }]}>
+      <SEO title = 'Startup' description = 'Resource about building a startup.' pathname = '/startup' zType = 'profile' />
       <section class='section'>
         <div class='title'>2020</div>
         <p>
