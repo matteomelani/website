@@ -12,12 +12,14 @@ export default ({ data }) => (
         description= "Matteo Melani's posts" 
         zType = 'website'
       />
-        <ul>
-          <li><Link to='posts'>Posts</Link></li>
-          <li><Link to='books'>Books</Link></li>
-          <li><Link to='places'>Places</Link></li>
-          <li><Link to='design'>Design</Link></li>
-          <li><Link to='about'>About</Link></li>
-        </ul>
+      <section class='section'>
+        <div class='container'>
+          <ul>
+            <li><Link to='posts'>Posts</Link></li>
+            <li><Link to='startup'>Startup</Link></li>
+            <li><Link to='about'>About</Link></li>
+          </ul>
+        </div>
+      </section>
     </Layout>
-)
+) 
