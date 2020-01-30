@@ -16,9 +16,9 @@ export default ( props ) => {
             pathname = {props.uri}
             zType = "article"
           />
-          <article>
+          <article className='section'>
             <header>
-                <div className="post-title is-size-4">{ post.frontmatter.title }</div>
+                {/* <h1 className="">{post.frontmatter.title}</h1> */}
             </header>
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </article>
