@@ -8,7 +8,7 @@ export default () => (
       <section class='section'>
         <div class='title'>2020</div>
         <p>
-          <a href="https://www.nfx.com/post/founders-startup-risk-types">Why Founders Should Take More Risk.</a>
+          <a target='_blank' href="https://www.nfx.com/post/founders-startup-risk-types">Why Founders Should Take More Risk.</a>
           <p>
             By Peter Flint of NFX. The article talks about the different kind of risks a founder must think about. 
             It is very useful to evaluate startup ideas and to understand how investors see risks. Keep in mind 
@@ -20,7 +20,7 @@ export default () => (
       <section class='section'>
         <div class='title'>2011</div>
         <p>
-          <a href="http://abovethecrowd.com/2011/05/24/all-revenue-is-not-created-equal-the-keys-to-the-10x-revenue-club/">
+          <a target='_blank' href="http://abovethecrowd.com/2011/05/24/all-revenue-is-not-created-equal-the-keys-to-the-10x-revenue-club/">
             All Revenue is Not Created Equal: The Keys to the 10X Revenue Club.
           </a>
           <p>
