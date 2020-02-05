@@ -7,7 +7,8 @@ const BookItem = ({ book }) => (
         <p>
             By {book.author}, {book.publication_date}.
             <p>{book.description}</p>
-            <p>Worth reading: {book.worth_reading}</p>
+            <p className=''>Worth reading: {book.worth_reading}</p>
+            <p>Worth listening to: {book.worth_listening}</p>
         </p>
       </p>
       <br></br>
