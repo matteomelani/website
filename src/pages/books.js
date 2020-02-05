@@ -5,7 +5,7 @@ import SEO from '../components/seo'
 import BookItem from '../components/BookItem'
 
 export default ({ data }) => (
-    <Layout breadcrumbsItems={[{ text:'Matteo Melani', link: '/' },{ text:'books', link: '/books' }]}>
+    <Layout breadcrumbsItems={[{ text:'Matteo Melani', link: '/' },{ text:'Books', link: '/books' }]}>
         <SEO title = 'Books' description = 'List of books I have read.' pathname = '/books' zType = 'books' />
         <section class='section'>
             {data.allMarkdownRemark.group.reverse().map( (g ) => {
