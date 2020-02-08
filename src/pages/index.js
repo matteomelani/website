@@ -13,6 +13,8 @@ export default ({ data }) => (
         zType = 'website'
       />
       <section class='section'>
+        <p>Work in progess...</p>
+        <br/>
         <ul>
           <li><Link to='posts'>Posts</Link></li>
           <li><Link to='startup'>Startup</Link></li>

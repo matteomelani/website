@@ -26,7 +26,7 @@ $mm-other-green: #02c159;
 $mm-other-yellow: #e0af0f;
 $mm-other-yellow2: #e8c159;
 
-$primary: $mm-dark-green;
+$primary: $mm-dark-blue;
 $text: $mm-black;
 // $link: $mm-light-blue;
 $body-font-size: 16px;
@@ -36,6 +36,12 @@ $body-font-size: 16px;
 
 .breadcrumb li.is-active a {
     color: $mm-yellow;
+}
+a:hover {
+    color: $mm-other-yellow2;
+}
+.breadcrumb a:hover {
+    color: $mm-other-yellow2;
 }
 .breadcrumb li a {
     color: $mm-light-blue;

@@ -14,7 +14,7 @@ export default (props) => (
     </nav>
     <section id='mm-mainarea' className='section'> 
       <div className='columns'>
-        <div id='main-box' className='column is-four-fifths'>
+        <div id='main-box' className='column is-two-fifths'>
           {props.children}
         </div>
       </div>
