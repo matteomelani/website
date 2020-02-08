@@ -10,10 +10,10 @@ export default () => (
         <p>
           <a target='_blank' href="https://www.nfx.com/post/founders-startup-risk-types">Why Founders Should Take More Risk.</a>
           <p>
-            By Peter Flint of NFX. The article talks about the different kind of risks a founder must think about. 
-            It is very useful to evaluate startup ideas and to understand how investors see risks. Keep in mind 
-            that the founders are the biggest investors in a startup and they are the ones taking the greatest 
-            risk.
+            By Peter Flint of NFX. The article talks about the different kind of risks a founder must consider. 
+            It is useful to evaluate startup ideas and to understand how investors see risks. 
+            Founders are the biggest investors in a startup, unlike VCs they cannot apply a 
+            portfolio approach and they invest their time which is not a renewable. 
           </p>
         </p>
       </section>
@@ -24,9 +24,9 @@ export default () => (
             All Revenue is Not Created Equal: The Keys to the 10X Revenue Club.
           </a>
           <p>
-            By Bill Gurley of Benchmark. This is a classic! It really helps understanding how investors evaluates 
-            opportunities and markets. Assuming the idea works, can the company your are building generate 
-            the right revenues?
+            By Bill Gurley of Benchmark. The article helps understanding how investors evaluates 
+            opportunities and markets. Assuming the idea works, can the company generates 
+            the "right" revenues?
           </p>
         </p>
       </section>
