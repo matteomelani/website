@@ -2,7 +2,7 @@
 title: "Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts"
 author: "Annie Duke"
 publication_date: "02/06/2018"
-description: "..."
+description: ""
 tags: [ "Non-fiction", "management", "decision"]
 amazon_url: https://www.amazon.com/Thinking-Bets-Making-Smarter-Decisions/dp/0735216355/
 read_in: "2019"
