@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/layout";
 import SEO from "../components/seo"
+import { Link } from "gatsby";
 
 export default () => (
     <Layout breadcrumbsItems={[{ text:'Matteo Melani', link: '/' },{ text:'Startup', link: '/startup' }]}>
@@ -14,6 +15,22 @@ export default () => (
             It is useful to evaluate startup ideas and to understand how investors see risks. 
             Founders are the biggest investors in a startup, unlike VCs they cannot apply a 
             portfolio approach and they invest their time which is not a renewable. 
+          </p>
+          <p>
+            <ui className="has-text-grey-light">
+              <li>Market risk: people don't want what you are building</li>
+              <li>Execution risk: you cannot build the product you evision.</li>
+              <li>Market risk => decide if you want to start a company or not.</li>
+              <li>Product Risk: people want your product?</li>
+              <li>Existing thriving business => demand => more execution risk.</li>
+              <li>Play where there WILL BE demand</li>
+              <li> Scale Risk: what's the size of the market?</li>
+              <li> Focus on big problems, market will follow.</li>
+              <li> Competitive Risk: who's the competition?</li>
+              <li> Timing Risk: is this the right time?</li>
+              <li> Legal Risk: what's the regulatory environment?</li>
+
+            </ui>
           </p>
         </p>
       </section>
