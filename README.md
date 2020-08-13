@@ -10,8 +10,7 @@ gatsby develop
 
 ## Deploy
 
-AWS Amplify, from the Console.
+Just push to master and AWS Amplify does the rest.
 
 =======# website
 My personal website at mame.io.
-
