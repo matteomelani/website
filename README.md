@@ -1,8 +1,11 @@
 ## Quick start
 
+Compile all src files to generate the website:
 ```
 gatsby develop
 ```
+
+/public => generated website
 
 `http://localhost:8000` => view site
 

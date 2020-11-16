@@ -12,8 +12,7 @@ export default ({ data }) => (
         description= "Matteo Melani's posts"
         zType = 'website'
       />
-        <section class='section'>
-            {/* <div class='subtitle'>Technical</div> */}
+        <section className='section'>
             {data.allMarkdownRemark.edges.map(({ node })=> (
                 <PostItem 
                     key = {node.frontmatter.title} 
